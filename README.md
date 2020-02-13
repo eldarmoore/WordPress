@@ -15,11 +15,11 @@
 * run in the run in the terminal `docker-compose up -d`
 
 
-## create a word press content form
+## create a WordPress content form
 
 ### Back-End
 
-* write each content request to the word press MySQL database.
+* write each content request to the WordPress MySQL database.
   * create a unique content request table that saves the name, email and phone number
 * a notification should be sent to the admin email.
 
@@ -29,8 +29,24 @@
   * Name
   * Email
   * Phone number
-* when one of the fields isn't filled, there should be an error message under the unfilled area.  
+* when one of the fields isn't filled, there should be an error message under the unfilled area.
 
-### SQL
+## Submit the code
 
-* TODO: Alex, please add a question here that tests the SQL skill of the candidate.
+* commit your code in one commit and push the changes to **your** repo
+
+```bash
+git commit -am "my work" && git push
+```
+
+* open **your** fork repo and go to the code section
+
+![commit-section](./commit-tab.png)
+
+* make sure that your commit is there
+
+![commit-exist](./commit-exist.png)
+
+* copy the url and send it back to us.
+
+# GOOD LUCK!
