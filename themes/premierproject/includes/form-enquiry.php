@@ -8,10 +8,10 @@
                     <input type="text" name="name" class="form-control" placeholder="Your Name *" value="" />
                 </div>
                 <div class="form-group">
-                    <input type="text" name="email" class="form-control" placeholder="Your Email *" value="" />
+                    <input type="email" name="email" class="form-control" placeholder="Your Email *" value="" />
                 </div>
                 <div class="form-group">
-                    <input type="text" name="phone" class="form-control" placeholder="Your Phone Number *" value="" />
+                    <input type="number" name="phone" class="form-control" placeholder="Your Phone Number *" value="" />
                 </div>
                 <div class="form-group">
                     <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
@@ -39,7 +39,29 @@
 
             var form = $('#enquiry').serialize();
 
-            console.log(form);
+            var formdata = new FormData;
+
+            // Send Action
+            formdata.append('action', 'enquiry');
+
+            // Send Data
+            formdata.append('enquiry', form);
+
+            $.ajax(endpoint, {
+                type: 'POST',
+                data: formdata,
+                processData: false,
+                contentType: false,
+
+                success: function (res) {
+                    alert(res.data);
+                },
+
+
+                error: function (err) {
+
+                }
+            })
 
         })
 
