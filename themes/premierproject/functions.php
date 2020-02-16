@@ -20,3 +20,5 @@ wp_enqueue_script('bootstrap');
 }
 
 add_action('wp_enqueue_scripts', 'load_js');
+
+wp_enqueue_style ('form-style', get_template_directory_uri().'/css/form-style.css');
