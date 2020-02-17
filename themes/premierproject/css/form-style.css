@@ -58,3 +58,17 @@ body{
     color: #dc3545;
     height: 20px;
 }
+
+#success_message {
+    height: 545px;
+    line-height: 500px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 44px;
+}
+
+#success_message span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}

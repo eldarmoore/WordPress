@@ -1,5 +1,7 @@
-<div class="container contact-form">
-
+<div class="container contact-form" style="min-height: 545px">
+    <div id="success_message" style="display: none">
+        <span></span>
+    </div>
     <form id="enquiry">
         <h3>Send Contact Form</h3>
         <div class="row">
@@ -82,11 +84,20 @@
                     contentType: false,
 
                     success: function (res) {
-                        alert(res.data);
+                        // alert(res.data);
+                        $("#enquiry").fadeOut(200);
+
+                        $("#success_message").show();
+
+                        $("#success_message span").text('Thanks for your enquiry');
                     },
 
                     error: function (err) {
+                        $("#enquiry").fadeOut(200);
 
+                        $("#success_message").show();
+
+                        $("#success_message span").text(err);
                     }
                 });
             } else {
