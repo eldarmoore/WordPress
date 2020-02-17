@@ -53,3 +53,8 @@ body{
     border: none;
     cursor: pointer;
 }
+#name_error, #email_error, #phone_error {
+    display: block;
+    color: #dc3545;
+    height: 20px;
+}
