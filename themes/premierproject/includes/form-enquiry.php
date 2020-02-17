@@ -54,7 +54,7 @@
 
             event.preventDefault();
 
-            // Validate each input if empty
+            // Validate each input
             let isNameEmpty = IfInputEmpty($("input[name=name"));
             let isEmailEmpty = IfInputEmpty($("input[name=email"));
             let isPhoneEmpty = IfInputEmpty($("input[name=phone"));
